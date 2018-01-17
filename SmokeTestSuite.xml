@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SmokeTestSuite">
+ <listeners>
+     
+        
+         <listener class-name="TestSuites.listeners"/>
+         <listener class-name="resources.ExtentReporterNG"/>
+         
+
+ </listeners>
+
+  <test name="Quick Search">
+    <classes>
+      <class name="TestSuites.QuickSearch"/>
+    </classes>
+  </test>
+  <test name="SmokeTest Suite ">
+    <classes>
+      <class name="TestSuites.SmokeTestSuite"/>
+   	</classes>
+  </test>
+   <!-- Test -->
+</suite> <!-- Suite -->

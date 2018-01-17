@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="TestSuites.SmokeTestSuite">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- TestSuites.SmokeTestSuite -->
+      <class name="TestSuites.EngageAutomation">
+        <methods>
+          <include name="getResult"/>
+          <include name="init"/>
+          <include name="engageApplicationLoginChangeVerifyStatus"/>
+        </methods>
+      </class> <!-- TestSuites.EngageAutomation -->
+      <class name="TestSuites.QuickSearch">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- TestSuites.QuickSearch -->
+      <class name="TestSuites.HeadlessBrowser">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- TestSuites.HeadlessBrowser -->
+      <class name="TestSuites.SeleniumGrid">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- TestSuites.SeleniumGrid -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

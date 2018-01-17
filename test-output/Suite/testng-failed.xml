@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="20" name="Failed suite [Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="TestSuites.listeners"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test name="First(failed)" parallel="methods">
+    <classes>
+      <class name="TestSuites.GoogleTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="getResult"/>
+          <include name="init"/>
+          <include name="icjApplicationLoginAndVerifyQuickSearch"/>
+        </methods>
+      </class> <!-- TestSuites.GoogleTest -->
+      <class name="TestSuites.QuickSearch">
+        <methods>
+          <include name="icjApplicationLoginAndVerifyQuickSearch"/>
+          <include name="init"/>
+          <include name="getResult"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- TestSuites.QuickSearch -->
+      <class name="TestSuites.SmokeTestSuite">
+        <methods>
+          <include name="icjApplicationLoginAndVerifyQuickSearch"/>
+          <include name="init"/>
+          <include name="getResult"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- TestSuites.SmokeTestSuite -->
+      <class name="TestSuites.SeleniumGrid">
+        <methods>
+          <include name="init"/>
+          <include name="getResult"/>
+          <include name="icjApplicationLoginAndVerifyQuickSearch"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- TestSuites.SeleniumGrid -->
+    </classes>
+  </test> <!-- First(failed) -->
+</suite> <!-- Failed suite [Suite] -->
